@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Maker - Lesson List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Test Maker</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="test-list.html" class="hover:underline">Tests</a></li>
+                <li><a href="lesson-list.html" class="hover:underline">Lessons</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto flex-grow p-4">
+        <h1 class="text-4xl font-bold mb-8">Lesson List</h1>
+        <a href="lesson-create.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mb-4 inline-block">Create New Lesson</a>
+        <table class="w-full border-collapse border border-gray-300 mt-4">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-300 p-2">Lesson Name</th>
+                    <th class="border border-gray-300 p-2">Description</th>
+                    <th class="border border-gray-300 p-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 p-2">Mathematics</td>
+                    <td class="border border-gray-300 p-2">Basic arithmetic and algebra</td>
+                    <td class="border border-gray-300 p-2">
+                        <a href="lesson-detail.html" class="text-blue-600 hover:underline mr-2">View</a>
+                        <a href="#" class="text-blue-600 hover:underline mr-2">Edit</a>
+                        <a href="#" class="text-red-600 hover:underline">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-2">Science</td>
+                    <td class="border border-gray-300 p-2">Introduction to physics and chemistry</td>
+                    <td class="border border-gray-300 p-2">
+                        <a href="lesson-detail.html" class="text-blue-600 hover:underline mr-2">View</a>
+                        <a href="#" class="text-blue-600 hover:underline mr-2">Edit</a>
+                        <a href="#" class="text-red-600 hover:underline">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="bg-gray-200 p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Test Maker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
